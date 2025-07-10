@@ -18,5 +18,5 @@ jobs:
           topic-id: ${{ secrets.TOPIC_ID }}
           file-path: |
             *.txt
-            ./*.yml
+            ./*/*/*.yml
           caption-path: release.txt
