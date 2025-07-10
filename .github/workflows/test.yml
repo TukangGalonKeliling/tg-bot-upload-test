@@ -16,5 +16,7 @@ jobs:
           bot-id: ${{ secrets.BOT_ID }}
           chat-id: ${{ secrets.CHAT_ID }}
           topic-id: ${{ secrets.TOPIC_ID }}
-          file-path: test.txt
+          file-path: |
+            *.txt
+            */*.yml
           caption-path: release.txt
