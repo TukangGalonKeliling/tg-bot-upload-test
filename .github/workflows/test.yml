@@ -10,6 +10,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: add url
+        run: |
+          echo "\n[Github Action](https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID})" >>
+
       - name: test
         uses: puernya/tg-bot-upload@v1
         with:
