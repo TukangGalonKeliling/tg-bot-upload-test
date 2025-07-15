@@ -12,7 +12,7 @@ jobs:
 
       - name: add url
         run: |
-          echo "\n[Github Action](https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID})" >>
+          echo "\n[Github Action](https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID})" >> release.txt
 
       - name: test
         uses: puernya/tg-bot-upload@v1
