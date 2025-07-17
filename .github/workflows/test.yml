@@ -15,7 +15,7 @@ jobs:
           echo "\n[Github Action](https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID})" >> release.txt
 
       - name: test
-        uses: puernya/tg-bot-upload@v1
+        uses: puernya/tg-bot-upload@main
         with:
           bot-id: ${{ secrets.BOT_ID }}
           chat-id: ${{ secrets.CHAT_ID }}
