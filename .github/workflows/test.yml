@@ -12,10 +12,11 @@ jobs:
 
       - name: add url
         run: |
-          echo "hello [Github Action](https://github.com) bro" > release.txt
-          cat >> release.txt << 'EOF'
-          >Use flashing software, such as [KernelFlasher](https://github.com) for flashing the kernel (Give root access to the Application)
-          EOF
+          #echo "hello [Github Action](https://github.com) bro" > release.txt
+          # cat >> release.txt << 'EOF'
+          # >Use flashing software, such as [KernelFlasher](https://github.com) for flashing the kernel (Give root access to the Application)
+          # EOF
+          echo ">Use flashing software, such as [KernelFlasher](https://github.com) for flashing the kernel (Give root access to the Application)" > release.txt
 
       - name: test
         uses: puernya/tg-bot-upload@main
